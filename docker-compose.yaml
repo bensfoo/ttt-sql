@@ -8,6 +8,5 @@ services:
       POSTGRES_DB: test
     volumes:
       - ./pgdata:/var/lib/postgresql/data
-      - ./create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
     ports:
       - "5432:5432"
